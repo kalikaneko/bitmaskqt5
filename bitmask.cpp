@@ -11,19 +11,13 @@ using namespace std;
 
 static string expand_env_vars(string s) {
     if(s.find("${") == string::npos) return s;
-
     string pre  = s.substr(0, s.find("${"));
     string post = s.substr(s.find("${" ) + 2);
-
     if(post.find('}') == string::npos) return s;
-
     string variable = post.substr(0, post.find( '}' ));
     string value    = "";
-
     post = post.substr(post.find( '}' ) + 1);
-
     if(getenv(variable.c_str()) != NULL) value = string(getenv(variable.c_str()));
-
     return expand_env_vars(pre + value + post);
 }
 
