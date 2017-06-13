@@ -18,6 +18,13 @@ Build the browser::
   qmake
   make
 
+To-Do
+--------------
+* [ ] trim size: unlink not-needed libraries.
+* [ ] automate dependency gathering.
+* [ ] expose bridges to JS to open link, shudown app.
+* [ ] allow to open new browser window to open Pixelated.
+
 Open Questions
 --------------
 * Can we get this in a smaller size?
