@@ -2,3 +2,4 @@ bitmask
 deps
 deps2
 *.o
+Makefile

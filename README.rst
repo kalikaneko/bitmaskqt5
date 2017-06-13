@@ -5,12 +5,17 @@ Experiments on a c++ browser for Bitmask UI.
 
 Dependencies
 ------------
-::
+Needs qt5 already installed in the system::
+
   apt install qt5-qmake qt5-default libqt5webkit5-dev
+
+``bitmaskd`` is also assumed to be running.
 
 Build
 -----
-::
+Build the browser::
+
+  qmake
   make
 
 Open Questions
